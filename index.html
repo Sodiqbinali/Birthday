@@ -9,11 +9,26 @@
 </head>
 
 <body>
+  
   <div class="banner">
+    <div  class="count">Please wait for 5 sec for redirect</div>
     <div class="bubble">
       <img src="wish.png" alt="">
     </div>
   </div>
-</body>
 
+  <script>
+    let counts = document.querySelector(".count");
+    let numb = 5;
+    const countint = setInterval(()=>{
+      counts.innerHTML =`Please wait for ${numb} sec for redirect`;
+      numb--;
+      
+    },1000)
+    setTimeout(() => {
+      clearInterval(countint);
+      window.location.href = "./home.html";
+    }, 6000)
+  </script>
+</body>
 </html>

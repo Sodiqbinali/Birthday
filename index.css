@@ -8,6 +8,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.count {
+    position: fixed;
+    color: gold;
+    font-size: 18px;
+}
+
 .banner {
     height: 100vh;
 }
